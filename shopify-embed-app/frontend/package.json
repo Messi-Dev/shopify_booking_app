@@ -1,0 +1,63 @@
+{
+  "name": "shopify-frontend-template-react",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": " npm run lint -- --fix"
+  },
+  "engines": {
+    "node": ">= 12.16"
+  },
+  "dependencies": {
+    "@jamalsoueidan/pkg.frontend": "^0.0.2",
+    "@jamalsoueidan/pkg.backend-types": "^0.0.1",
+    "@jamalsoueidan/frontend.polyfills.json": "^0.0.1",
+    "@shopify/app-bridge": "^3.1.0",
+    "@shopify/app-bridge-react": "^3.1.0",
+    "@shopify/app-bridge-utils": "^3.1.0",
+    "@shopify/polaris": "^10.27.2",
+    "@shopify/polaris-icons": "^6.11.1",
+    "@shopify/react-form": "^2.5.0",
+    "@shopify/react-i18n": "^7.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-query": "^3.39.2",
+    "react-router-dom": "^6.6.1",
+    "date-fns": "^2.29.3",
+    "date-fns-tz": "^2.0.0",
+    "mongoose": "6.8.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-dynamic-import-vars": "^2.0.2",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^26.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-sort-keys": "^2.3.5",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "history": "^5.3.0",
+    "jsdom": "^20.0.3",
+    "prettier": "^2.8.1",
+    "rollup-plugin-visualizer": "^5.9.0",
+    "typescript": "^4.9.4",
+    "vi-fetch": "^0.8.0",
+    "vite-plugin-checker": "^0.5.3",
+    "vite-tsconfig-paths": "^4.0.3",
+    "@vitejs/plugin-react": "1.3.2",
+    "vite": "^2.9.15"
+  }
+}

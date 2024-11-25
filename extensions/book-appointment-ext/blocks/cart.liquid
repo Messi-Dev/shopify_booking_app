@@ -1,0 +1,30 @@
+<script language="javascript" type="text/javascript">
+  function hideQuantity() {
+    const items = document.getElementsByClassName('cart-item');
+    for (var i = 0; i < items.length; i++) {
+      if (items[i].querySelectorAll('dl .product-option').length === 3) {
+        items[i].getElementsByTagName('quantity-input')[0].style.display = 'none';
+      }
+    }
+  }
+
+  window.addEventListener('load', hideQuantity);
+
+  const observer = new MutationObserver((mutations, observer) => {
+    hideQuantity();
+  });
+
+  observer.observe(document.getElementById('cart-live-region-text'), {
+    subtree: true,
+    attributes: true,
+  });
+</script>
+
+{% schema %}
+{
+  "name": "cart",
+  "target": "body",
+  "templates": ["cart"],
+  "settings": []
+}
+{% endschema %}
